@@ -1,0 +1,107 @@
+which tshark
+tshark  -h or tshark --help
+tshark -i [interfaces]
+tshark -D [to show the interfaces]
+tcpdump -D [to show the interfaces]
+
+tshark -i eth0 [capture]
+
+tshark -i eth0 -w my_tshark_capture.pcap
+tcpdump -i eth0 -w my_tshark_capture.pcap
+
+tshark -i eth0 -a duration:90 -w my_tshark_capture.pcap [duration is for 90 seconds]
+tshark -c 5 -i eth0 -a duration:90 -w my_tshark_capture.pcap [-c specifies the number of packets you want to capture]
+
+ipconfig
+ifconfig
+
+
+ip addr[shows ip address at inet loopack and eth0]
+tshark -i eth0 -f "host 172.30.46.50" [capture packets from or to]
+
+Filtering the packets
+tshark -i eth0 -f "icmp" [capture packets from or to]
+
+Changing the output
+
+
+video tcpdump vs tshark
+
+Try this one: alert tcp any any -> any any (content: "cmd"; msg: "Malicious Activity"; sid: 1001;)
+
+
+
+
+
+tshark -i  
+network traffic and analysis
+
+
+In your own words, describe what the following TShark command does: $tshark -i eth0 -w myCapture.pcap
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+2
+What does the following tcpdump command do? $tcpdump -nnvvS src 10.5.2.3 and dst port 3389
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+3
+In your own words, describe what the following TShark command does: $tshark -i eth1 -f “dns”
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+4
+In your own words, describe what the following TShark command does: $tshark -T fields -e frame.number -e ip.addr -e ip.len
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+5
+Write a TShark command which will would display the contents of the packets captured to or from IP address 192.168.8.244 which are contained in the file mycaptures.pcap
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+6
+In your own words, what does the following editcap command do? $editcap -S 0 capture.pcap adjusted.pcap
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+7
+In your own words, describe two differences between TShark and tcpdump
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+8
+Write a tcpdump command to show all traffic from 10.10.13.37 which is NOT SSH traffic (assuming default port usage)
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+9
+In your own words, what does the following editcap command do? $editcap -r capture.pcap new.pcap 1-500
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+10
+In your own words, describe the primary purpose and usage of editcap
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+11
+In your own words, what does the following tcpdump command do? $tcpdump 'src 10.0.2.4 and (dst port 3389 or 22)'
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+12
+Write an editcap command to remove duplicate packets seen within the last 100 frames
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+13
+In your own words, describe tcpdump and what it is used for
+* CUI data and below only, do not provide data above this specification.
+
+Enter your answer
+14
+Describe TShark and what it is used for.
+* CUI data and below only, do not provide data above this specification.
+
