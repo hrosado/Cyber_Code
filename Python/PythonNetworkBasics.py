@@ -6,7 +6,6 @@ print(type(protocolList))
 print(len(protocolList))
 
 position = protocolList.index("ssh")
+print("ssh position " + str(position))
+# print(position)
 
-print(position)
-
-print("Hello GitHub")
